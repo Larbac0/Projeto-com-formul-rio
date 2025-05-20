@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu veículo para vender mais rápido</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda fácil seu carro!</h1>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+            </div>
+            <form>
+                <div class="box-input">
+                    <label for="title">Título do anúncio<span class="required-field">*</span></label>
+                    <input type="text" id="title" name="title" placeholder="Título do anúncio" required maxlength="50">
+                </div>
+                <div class="box-input">
+                    <label for="price">Preço<span class="required-field">*</span></label>
+                    <input type="number" id="price" name="price" placeholder="Valor do carro" required>
+                </div>
+                <div class="box-input">
+                    <label for="description">Descrição do anúncio<span class="required-field">*</span></label>
+                    <textarea id="description" name="description" placeholder="Descreva os detalhes do carro" required></textarea>
+                </div>
+                <div class="box-input">
+                    <label for="brand">Modelo<span class="required-field">*</span></label>
+                    <input type="" id="brand" name="brand" placeholder="Digite a marca do carro" required>
+                </div>
+                <div class="box-input">
+                    <label for="model">Modelo<span class="required-field">*</span></label>
+                    <input type="" id="model" name="model" placeholder="Digite o modelo do carro" required>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
