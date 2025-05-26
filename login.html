@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="CSS/login.css">
+        <title>Wave Veículos - Início</title>
+    </head>
+    <body>
+        <header class="header-container">
+            <h1><a href="index.html" class="header-link">Wave Veículos</a></h1>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="index.html" class="header-link">Home</a></li>
+                    <li class="header-item"><a href="form.html" class="header-link">Cadastrar veículo</a></li>
+                    <li class="header-item"><a href="list.html" class="header-link">Listar veículos</a></li>
+                    <li class="header-item"><a href="login.html" class="header-link">Login</a></li>
+                    <li class="header-item"><a href="register.html" class="header-link">Registrar</a></li>
+                    <li class="header-item"><a href="logout.html" class="header-link">Sair</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="Buscar veículos..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+        </header>
+        <main>
+            <div class="login-container">
+                <h2 class="login-title">Login</h2>
+                <form class="login-form">
+                    <p>Insira suas credenciais para acessar sua conta. Se você não possui uma conta, pode se cadastrar clicando no botão abaixo.</p>
+                    <div class="form-group">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required class="form-input">
+                    </div>
+                    <label for="remember">Lembrar-me</label>
+                    <input type="checkbox" id="remember" name="remember">
+                    <div class="form-group">
+                        <input type="submit" value="Enviar" id="enviar" class="form-button">
+                        <button type="button" class="form-button" onclick="window.location.href='reset.html';">Esqueci minha senha</button>
+                    </div>
+                    <input type="submit" value="Cadastrar-se" class="form-button" onclick="window.location.href='register.html'; return false;">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

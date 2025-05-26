@@ -1,62 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/index.css">
-    <title>Wave Veículos - Início</title>
-</head>
-<body>
-    <header class="header-container">
-        <h1><a href="index.html" class="header-link">Wave Veículos</a></h1>
-        <nav class="header-nav">
-            <ul class="header-list">
-                <li class="header-item"><a href="index.html" class="header-link">Home</a></li>
-                <li class="header-item"><a href="form.html" class="header-link">Cadastrar Veículo</a></li>
-                <li class="header-item"><a href="list.html" class="header-link">Listar Veículos</a></li>
-                <li class="header-item"><a href="login.html" class="header-link">Login</a></li>
-                <li class="header-item"><a href="register.html" class="header-link">Registrar</a></li>
-                <li class="header-item"><a href="logout.html" class="header-link">Sair</a></li>
-            </ul>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/index.css">
+        <title>Wave Veículos - Início</title>
+    </head>
+    <body>
+        <header class="header-container">
+            <h1><a href="index.html" class="header-link">Wave Veículos</a></h1>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="index.html" class="header-link">Home</a></li>
+                    <li class="header-item"><a href="form.html" class="header-link">Cadastrar veículo</a></li>
+                    <li class="header-item"><a href="list.html" class="header-link">Listar veículos</a></li>
+                    <li class="header-item"><a href="login.html" class="header-link">Login</a></li>
+                    <li class="header-item"><a href="register.html" class="header-link">Registrar</a></li>
+                    <li class="header-item"><a href="logout.html" class="header-link">Sair</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="Buscar veículos..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+        </header>
         <main>
-            <h2>Bem-vindo ao Wave Veículos</h2>
-            <p>Seu portal para comprar e vender veículos de forma rápida e fácil.</p>
-            <p>Explore nossas opções e encontre o carro dos seus sonhos!</p>
+            <div class="banner-container">
+                <h2 class="main-title">Bem-vindo ao Wave Veículos</h2>
+                <p class="main-paragraph">Seu portal para comprar e vender veículos de forma rápida e fácil.</p>
+                <p class="main-paragraph">Explore nossas opções e encontre o carro dos seus sonhos!</p>
+            </div>
             <nav class="conteiner-carrosel">
+                <h2 class="carrosel-title">Mais vistos/visitados</h2>
                 <div class="carrosel">
                     <div class="carrosel-item">
-                        <img src="imagens/carro1.jpg" alt="Carro 1">
-                        <h3>Carro 1</h3>
-                        <p>Preço</p>
+                        <img src="img/Supra.webp" alt="Toyota Supra">
+                        <h3>Toyota Supra - 2022</h3>
+                        <p>R$ 990.000,00</p>
                     </div>
                     <div class="carrosel-item">
-                        <img src="imagens/carro2.jpg" alt="Carro 2">
-                        <h3>Carro 2</h3>
-                        <p>Preço</p>
+                        <img src="img/Azera.jpg" alt="Hyundai Azera">
+                        <h3>Hyundai Azera - 2011</h3>
+                        <p>R$ 47.900,00</p>
                     </div>
                     <div class="carrosel-item">
-                        <img src="imagens/carro3.jpg" alt="Carro 3">
-                        <h3>Carro 3</h3>
-                        <p>Preço</p>
+                        <img src="img/Seal.webp" alt="BYD Seal">
+                        <h3>BYD Seal - 2024</h3>
+                        <p>R$ 239.900,00</p>
                     </div>
                     <div class="carrosel-item">
-                        <img src="imagens/carro4.jpg" alt="Carro 4">
-                        <h3>Carro 4</h3>
-                        <p>Preço</p>
-                </div>
-                <div class="carrosel-item">
-                    <img src="imagens/carro5.jpg" alt="Carro 5">
-                    <h3>Carro 5</h3>
-                    <p>Preço</p>
+                        <img src="img/Compass.jpg" alt="Jeep Compass">
+                        <h3>Jeep Compass - 2023</h3>
+                        <p>R$ 140.390,00</p>
+                    </div>
+                    <div class="carrosel-item">
+                        <img src="img/RS3.jpg" alt="Audi RS3">
+                        <h3>Audi RS3 - 2016</h3>
+                        <p>R$ 269.900,00</p>
+                    </div>
                 </div>
             </nav>
-            <p><a href="form.html">Clique aqui</a> para cadastrar seu veículo.</p>
-            <p><a href="list.html">Clique aqui</a> para listar os veículos disponíveis.</p>
+            <div class="container-buttons">
+                <div class="button-group">
+                    <a href="form.html" class="register-link">Clique aqui</a>
+                    <p class="register-text">para cadastrar seu veículo.</p>
+                </div>
+                <div class="button-group">
+                    <a href="list.html" class="list-link">Clique aqui</a>
+                    <p class="list-text">para listar os veículos disponíveis.</p>
+                </div>
+            </div>
+            <div class="category-container">
+                <h3 class="category-title">Categorias</h3>
+                <div class="category">
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/SUV.svg" alt="SUVs">
+                        <h4>SUVs</h4>
+                    </div></a>
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/Sedan.svg" alt="Sedans">
+                        <h4>Sedans</h4>
+                    </div></a>
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/Hatch.svg" alt="Hatchbacks">
+                        <h4>Hatchbacks</h4>
+                    </div></a>
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/Coupé.svg" alt="Coupés">
+                        <h4>Coupés</h4>
+                    </div></a>
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/Electric.svg" alt="Elétricos">
+                        <h4>Elétricos</h4>
+                    </div></a>
+                </div>
+                <div class="category">
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/PickUp.svg" alt="Picapes">
+                        <h4>Picapes</h4>
+                    </div></a>
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/Convertible.svg" alt="Conversíveis">
+                        <h4>Conversíveis</h4>
+                    </div></a>
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/Van.svg" alt="Vans">
+                        <h4>Vans</h4>
+                    </div></a>
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/Truck.svg" alt="Caminhões">
+                        <h4>Caminhões</h4>
+                    </div></a>
+                    <a href="#" class="category-link"><div class="category-item">
+                        <img src="img/Motorcycle.svg" alt="Motos">
+                        <h4>Motos</h4>
+                    </div></a>
+                </div>
+            </div>
         </main>
         <footer>
-            <p>&copy; 2025 Wave Veículos. Todos os direitos reservados.</p>
-            <p>Desenvolvido por &copy; 2024 SoftWave Solutions</p>
+            <div class="footer-container">
+                <p class="footer-text">&copy; 2023 Wave Veículos. Todos os direitos reservados.</p>
+                <p class="footer-text">&copy; Desenvolvido por SoftWave Solutions</p>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
         </footer>
-</body>
+    </body>
 </html>
