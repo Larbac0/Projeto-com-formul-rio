@@ -6,8 +6,9 @@
 .filters{
     display: flex;
     flex-direction: column;
+    text-align: center;
     background-color: #f9f9f9;
-    width: 30%;
+    width: 40%;
     border-right: #e6e6e6 solid 2px;
     border-bottom: #e6e6e6 solid 2px;
     height: 100%;
@@ -44,6 +45,68 @@
 .filter-group.active .collapse-content {
   max-height: 500px;
   padding-top: 0.5rem;
+}
+
+.brand-option {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.brand-option input {
+  display: none;
+}
+
+.brand-img-wrapper {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 6px;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.brand-img-wrapper img {
+  width: 60px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+.brand-option input:checked + .brand-img-wrapper {
+  opacity: 1;
+  border-color: #673ab7;;
+  background-color: #e6e6e6;
+}
+
+.brand-reset-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #673ab7;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.brand-reset-btn:hover {
+  background-color: #f1f1f1;
+  color: #673ab7;
+  border: 2px solid #673ab7;
+  cursor: pointer;
+}
+
+.price-range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.price-range label {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .conteiner-car-list{

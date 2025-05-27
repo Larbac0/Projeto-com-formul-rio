@@ -9,3 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+  document.getElementById('show-all-brands').addEventListener('click', () => {
+    document.querySelectorAll('.brand-option input[type="checkbox"]').forEach(checkbox => {
+      checkbox.checked = false;
+    });
+  });
+
+
+

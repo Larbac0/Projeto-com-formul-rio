@@ -32,24 +32,66 @@
                 <div class="filter-group">
                     <button class="collapse-toggle">Marca:</button>
                     <div class="collapse-content">
-                        <label for="brand">
-                            <select id="brand" class="filter-select">
-                            <option value="">Todas</option>
-                            <option value="fiat">Fiat</option>
-                            <option value="ford">Ford</option>
-                            <option value="chevrolet">Chevrolet</option>
-                            <option value="toyota">Toyota</option>
-                            <option value="volkswagen">Volkswagen</option>
-                            <option value="renault">Renault</option>
-                            <option value="audi">Audi</option>
-                            <option value="byd">BYD</option>
-                            </select>
+                        <label class="brand-option">
+                            <input type="checkbox" name="brand" value="fiat">
+                            <div class="brand-img-wrapper">
+                                <img src="img/Logomarcas/Fiat.svg" alt="Fiat">
+                            </div>
                         </label>
+                        <label class="brand-option">
+                            <input type="checkbox" name="brand" value="ford">
+                            <div class="brand-img-wrapper">
+                                <img src="img/Logomarcas/Ford.svg" alt="Ford">
+                            </div>
+                        </label>
+                        <label class="brand-option">
+                            <input type="checkbox" name="brand" value="chevrolet">
+                            <div class="brand-img-wrapper">
+                                <img src="img/Logomarcas/Chevrolet.svg" alt="Chevrolet">
+                            </div>
+                        </label>
+                        <label class="brand-option">
+                            <input type="checkbox" name="brand" value="toyota">
+                            <div class="brand-img-wrapper">
+                                <img src="img/Logomarcas/Toyota.svg" alt="Toyota">
+                            </div>
+                        </label>
+                        <label class="brand-option">
+                            <input type="checkbox" name="brand" value="volkswagen">
+                            <div class="brand-img-wrapper">
+                                <img src="img/Logomarcas/Volkswagen.svg" alt="Volkswagen">
+                            </div>
+                        </label>
+                        <label class="brand-option">
+                            <input type="checkbox" name="brand" value="renault">
+                            <div class="brand-img-wrapper">
+                                <img src="img/Logomarcas/Renault.svg" alt="Renault">
+                            </div>
+                        </label>
+                        <label class="brand-option">
+                            <input type="checkbox" name="brand" value="audi">
+                            <div class="brand-img-wrapper">
+                                <img src="img/Logomarcas/Audi.svg" alt="Audi">
+                            </div>
+                        </label>
+                        <label class="brand-option">
+                            <input type="checkbox" name="brand" value="byd">
+                            <div class="brand-img-wrapper">
+                                <img src="img/Logomarcas/BYD.svg" alt="BYD">
+                            </div>
+                        </label>
+                        <button id="show-all-brands" class="brand-reset-btn">Mostrar todas as marcas</button>
                     </div>
                 </div>
                 <div class="filter-group">
                     <button class="collapse-toggle">Ano:</button>
                     <div class="collapse-content">
+                        <h5 class="filter-text">Escolha um intervalo</h5>
+                        <span>De:</span>
+                        <input type="number" name="precoMin" min="1900">
+                        <span>até:</span>
+                        <input type="number" name="precoMax" max="2025">
+                        <h5 class="filter-text">Ou escolha um ano específico</h5>
                         <label for="year">
                             <select id="year" class="filter-select">
                             <option value="">Todos</option>
@@ -67,9 +109,16 @@
                 <div class="filter-group">
                     <button class="collapse-toggle">Preço:</button>
                     <div class="collapse-content">
-                        <input type="number" name="precoMin" placeholder="De" min="0" step="1000">
-                        <span>até</span>
-                        <input type="number" name="precoMax" placeholder="Até" min="0" step="1000">
+                        <div class="price-range">
+                            <label>
+                                <span>De: R$</span>
+                                <input type="number" name="precoMin" min="0" step="1000">
+                            </label>
+                            <label>
+                                <span>Até: R$</span>
+                                <input type="number" name="precoMax" min="0" step="1000">
+                            </label>
+                        </div>
                         <h5 class="filter-text">Ou escolha um intervalo de preço:</h5>
                         <label for="price">
                             <select id="price" class="filter-select">
@@ -83,6 +132,70 @@
                         </label>
                     </div>
                 </div>
+                <div class="filter-group">
+                    <button class="collapse-toggle">Combustível:</button>
+                    <div class="collapse-content">
+                        <label class="fuel-option">
+                            <input type="checkbox" name="fuel" value="gasolina">
+                            Gasolina
+                        </label>
+                        <label class="fuel-option">
+                            <input type="checkbox" name="fuel" value="etanol">
+                            Etanol
+                        </label>
+                        <label class="fuel-option">
+                            <input type="checkbox" name="fuel" value="diesel">
+                            Diesel
+                        </label>
+                        <label class="fuel-option">
+                            <input type="checkbox" name="fuel" value="eletrico">
+                            Elétrico
+                        </label>
+                        <label class="fuel-option">
+                            <input type="checkbox" name="fuel" value="hibrido">
+                            Híbrido
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <button class="collapse-toggle">Cor:</button>
+                    <div class="collapse-content">
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="preto">
+                            Preto
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="branco">
+                            Branco
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="prata">
+                            Prata
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="azul">
+                            Azul
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="vermelho">
+                            Vermelho
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <button class="collapse-toggle">Transmissão:</button>
+                    <div class="collapse-content">
+                        <label class="transmission-option">
+                            <input type="checkbox" name="transmission" value="manual">
+                            Manual
+                        </label>
+                    </div>
+                    <div class="collapse-content">
+                            <label class="transmission-option">
+                                <input type="checkbox" name="transmission" value="automatico">
+                                Automático
+                            </label>
+                    </div>
             </aside>
             <nav class="conteiner-car-list">
                 <h2 class="car-list"></h2>
