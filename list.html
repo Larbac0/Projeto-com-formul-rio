@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/list.css">
+        <title>Wave Veículos - Início</title>
+    </head>
+    <body>
+        <header class="header-container">
+            <h1><a href="index.html" class="header-link">Wave Veículos</a></h1>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="index.html" class="header-link">Home</a></li>
+                    <li class="header-item"><a href="form.html" class="header-link">Cadastrar veículo</a></li>
+                    <li class="header-item"><a href="list.html" class="header-link">Listar veículos</a></li>
+                    <li class="header-item"><a href="login.html" class="header-link">Login</a></li>
+                    <li class="header-item"><a href="register.html" class="header-link">Registrar</a></li>
+                    <li class="header-item"><a href="logout.html" class="header-link">Sair</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="Buscar veículos..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+        </header>
+        <main class="vehicle-list-page">
+            <aside class="filters">
+                <h3 class="text-filters">Filtrar</h3>
+                <div class="filter-group">
+                    <button class="collapse-toggle">Marca:</button>
+                    <div class="collapse-content">
+                        <label for="brand">
+                            <select id="brand" class="filter-select">
+                            <option value="">Todas</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="ford">Ford</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="renault">Renault</option>
+                            <option value="audi">Audi</option>
+                            <option value="byd">BYD</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <button class="collapse-toggle">Ano:</button>
+                    <div class="collapse-content">
+                        <label for="year">
+                            <select id="year" class="filter-select">
+                            <option value="">Todos</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <button class="collapse-toggle">Preço:</button>
+                    <div class="collapse-content">
+                        <input type="number" name="precoMin" placeholder="De" min="0" step="1000">
+                        <span>até</span>
+                        <input type="number" name="precoMax" placeholder="Até" min="0" step="1000">
+                        <h5 class="filter-text">Ou escolha um intervalo de preço:</h5>
+                        <label for="price">
+                            <select id="price" class="filter-select">
+                                <option value="">Todos</option>
+                                <option value="0-50000">R$ 0 - R$ 50.000</option>
+                                <option value="50001-100000">R$ 50.001 - R$ 100.000</option>
+                                <option value="100001-200000">R$ 100.001 - R$ 200.000</option>
+                                <option value="200001-500000">R$ 200.001 - R$ 500.000</option>
+                                <option value="500001-1000000">R$ 500.001 - R$ 1.000.000</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+            <nav class="conteiner-car-list">
+                <h2 class="car-list"></h2>
+                <div class="list">
+                    <div class="list-item">
+                        <img src="img/Supra.webp" alt="Toyota Supra">
+                        <h3>Toyota Supra - 2022</h3>
+                        <p>R$ 990.000,00</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="img/Azera.jpg" alt="Hyundai Azera">
+                        <h3>Hyundai Azera - 2011</h3>
+                        <p>R$ 47.900,00</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="img/Seal.webp" alt="BYD Seal">
+                        <h3>BYD Seal - 2024</h3>
+                        <p>R$ 239.900,00</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="img/Compass.jpg" alt="Jeep Compass">
+                        <h3>Jeep Compass - 2023</h3>
+                        <p>R$ 140.390,00</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="img/RS3.jpg" alt="Audi RS3">
+                        <h3>Audi RS3 - 2016</h3>
+                        <p>R$ 269.900,00</p>
+                    </div>
+                </div>
+            </nav>
+        </main>
+        <script src="JS/list.js"></script>
+    </body>
+</html>

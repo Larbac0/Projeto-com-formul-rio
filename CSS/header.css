@@ -1,0 +1,42 @@
+.header-container{
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #673ab7;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    margin-left: 150px;
+}
+
+.header-link{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+
+.header-list{
+    display: flex;
+}
+
+.header-item{
+    color: #f1f1f1;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header-item:nth-child(3){
+    margin-right: 150px;
+}
+
+.search-button{
+    padding: 10px;
+    background-color: #673ab7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

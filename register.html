@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/register.css">
+        <title>Wave Veículos - Início</title>
+    </head>
+    <body>
+        <header class="header-container">
+            <h1><a href="index.html" class="header-link">Wave Veículos</a></h1>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="index.html" class="header-link">Home</a></li>
+                    <li class="header-item"><a href="form.html" class="header-link">Cadastrar veículo</a></li>
+                    <li class="header-item"><a href="list.html" class="header-link">Listar veículos</a></li>
+                    <li class="header-item"><a href="login.html" class="header-link">Login</a></li>
+                    <li class="header-item"><a href="register.html" class="header-link">Registrar</a></li>
+                    <li class="header-item"><a href="logout.html" class="header-link">Sair</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="Buscar veículos..." class="search-input">
+                <button class="search-button">Buscar</button>
+            </div>
+        </header>
+        <main>
+            <div class="register-container">
+                <h2 class="register-title">Seja bem-vindo(a) ao Wave veículos</h2>
+                <p class="register-text">Faça seu cadastro para comprar e vender veículos</p>
+                <form class="register-form">
+                    <p>Preencha os campos abaixo para criar uma nova conta.</p>
+                    <div class="form-group">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar Senha:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Data de nascimento:</label>
+                        <input type="date" id="date" name="date" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="CPF">CPF:</label>
+                        <input type="number" id="CPF" name="CPF" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <p class="register-text">Ao se registrar, você concorda com nossos <a href="terms.html" class="register-link">Termos de Serviço</a> e <a href="privacy.html" class="register-link">Política de Privacidade</a>.</p>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms" class="terms-label">Li e concordo com os termos</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Registrar" id="register" class="form-button">
+                        <button type="button" class="form-button" onclick="window.location.href='login.html';">Já tenho uma conta</button>
+                    </div>
+                </form>
+
+            </div>
+        </main>
+    </body>
+</html>
